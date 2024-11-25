@@ -1,0 +1,118 @@
+1. How did you come up with the Homepage?
+
+>> Our site is divided into TWO FRAMES --> TWO ROWS
+ First Frame contains:
+ VU logo: We used image tag. <img src = "Vu logo">
+ Group Name: Use H1 tag 
+ "Back to home button": We used button tag.
+ "Back to home" button --> Refreshes the page so that we can see the gallery of members.
+
+Creating a button: 
+we used the <button> Back to Home</button>
+
+SECOND FRAME (SECOND ROW)
+>> contains two frames. 
+>> One frame contains the Members list --> Left hand side linked to their  biographies
+>> Second frame contains gallery of members linked to their biographies
+
+
+Briefly explain the structure of an html document?
+Every webpage or html document has the following structure.
+
+Declaration that is <!Doctype html>: Tells the browser which html version to be used and the code to be rendered and parsed in.
+
+<head></head> tags
+<title><title> : Title of the document.
+<footer></footer>
+<body></body : All content goes here -> graphics (images, videos), texts, button
+
+
+HOW WE CREATED THE GALLERY?
+We used table : 
+
+<table>
+ <tr></tr> #From Emma--> flavia:#pictures
+<tr></tr> #From Emma--> flavia:#Names
+
+<tr></tr> #From Grace--> Amon:#pictures
+<tr></tr> #From Grace--> Amon:#Names
+
+</table>
+
+We used <td></td> to put both the pictures and the Names
+
+
+
+
+
+Explain the different btn <div> and <span>
+<div></div> Tag is used to tagged specific sections. We can allocate id to unique identify an element or section while styling.
+or class to identify a group.
+
+
+
+ANY OTHER BUSINESS >>  AT YOUR OWN RISK.
+<span> </span> is used to markup a part of text.
+
+rowspan: is used to merge rows table
+colspan: is used to merge columns of a table
+
+What is the purpose of the <meta>tag?
+meta tag provides information about the website
+OR-->defines the metadata about HTML document
+
+Different between:
+inline css :- <p style="color:red">Flavia</p> : -> Exactly put on the element's opening tag.
+
+internal css: Internal CSS is always put in the head tag of that particular webpage or html document.
+
+<html>
+<head>
+	<title>bbc world service</title>
+
+	<style>
+		p{color:red} --> Internal CSS --> On the head of the webpage.
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="myStyling.css">
+
+</head>
+
+	<body>
+	<p style="color:red"> That latest about Sensational Ug</p> :Inline css
+	</body>
+
+</html>
+
+external css --> Always another file saved with a .css file name extension
+		>but it is linked to a particular webpage in it's head section
+
+e.g myStyling.css
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
