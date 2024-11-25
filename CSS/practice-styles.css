@@ -1,0 +1,99 @@
+/*A CSS rule consists of a selector and a declaration
+block
+h1 {color:blue;font-size:12px;} 
+h1 --> Selector
+color: property
+blue: Value
+; seperats the code.
+Selector points to the html element you want to style.
+
+CSS style consists of a selector and a declaration block.
+A selector is the element that we want to style.
+e.g a, h1, body, table, divs, navs, et.c
+
+DIFFERNET TYPES OF CSS SELECTORS.
+
+simple selectors: Select elements based on name, id class.
+combinator selectors: select elements based on relationship with them
+Pseudo-class selectors: select elements based on a certain state.
+Pseudo-element selectors: select and stypel a part of an element.
+Universal selector: is represented using an asterick or star (*)
+Tells the browser to style all the elements within that html
+page like that.
+The CSS groupings selector.
+h1,p,a{color:green}
+*/
+
+
+/*TYPES OF CASCADING STYLE SHEETS*
+You can use of implement CSS in three ways in your HTML documents
+
+1. External style sheet: Define the style sheet rules
+in a separte .css file and include that file in your HTML document
+using HTML <link> tag.
+
+
+Internal style sheet: Define the style sheet rules in header
+section of the HTML document using. <style> tag.
+
+inline style sheet:
+Define style sheet rules directly along-with the HTML elements using style attribute
+
+
+
+EXTERNAL STYLE SHEET:
+** Use an external stylesheet when you want to apply one style
+to many pages. If you make one change in an external stylesheet,
+the change is universal on all the pages where the stylesheet is used.
+ An external stylesheet is declared in an external file with .css
+ extension. It is called by pages whose interface it will affect.
+
+ External stylesheets are called using the <link> tag which
+ should be placed in the head section of an HTML document.
+ THis tage takes three key attributes.
+
+ Attributes of the <link> tag.
+ rel - when using an external stylesheet on a webpage, this attribute
+ takes the value "stylesheet"
+ type - value of "text/css"
+  href - denotes the name and location of the external style sheet used.
+
+/
+
+    <style>
+<!--/*BY INTRODUCING THE STYLE ELEMENT WITHIN THE HEAD SECTION*/
+ /*Element selector :
+ 
+ PRIORITY:
+ When you use many stylesheets. #Multiple style sheets, the browser
+ takes the one with highest priority.
+ 
+ */
+
+ *{font-style: italic;}/*Universal selector. Styles 
+ all the elements like that.*/
+p{color:green;
+text-align:center;
+font: size 200%;
+font-weight:bold
+}
+
+a,h1,p,th{color:yellowgreen}
+
+#para-1{color:rgb(92, 92, 224)}
+
+#salary-table{color:blue;float:left;
+        border:1px solid black;
+        padding:5px
+}
+
+.salary-row{color:white;background-color:black}
+p.paragraph{color:blue;}
+.last-row{color:white;background-color:blue}
+/*Element can have more than one class seperated by space*/
+
+
+/*The ID-Selector uses the Id attribute of an html 
+element to select a particular element*/
+
+ol{color:red;float:right}

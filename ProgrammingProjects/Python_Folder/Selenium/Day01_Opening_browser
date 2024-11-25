@@ -1,0 +1,15 @@
+
+from selenium import webdriver
+from selenium.webdriver.chrome.service import service
+##Importing service class from chrome sub packages above
+"""First thing to do is to import webdriver Object from selenium package"""
+#Path to the browser driver >>> this will automatically launch our browser
+#executable_Aurgement
+
+#Before creating the executable path we have to create the service class object.
+#This service will take the location of the driver
+# file_path='C:\Drivers\chrome-win64\chrome-win64\chrome.exe'
+serv_obj = service('C:\rDrivers\chrome-win64\chrome-win64\chrome.exe')
+
+driver = webdriver.Chrome(service=serv_obj) #Create an object of the webdriver so we can access it's classes
+driver.get("https://www.selenium.dev/selenium/web/web-form.html")

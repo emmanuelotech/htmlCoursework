@@ -1,0 +1,27 @@
+
+
+
+#groupheading{color:rgb(61, 35, 232);
+    font-size:25px;
+    font-weight: bold;
+    text-align:center; 
+}
+
+
+#membersnames{background-color:yellow;}
+
+
+memberslist{
+list-style-type:none;
+
+}
+
+li{list-style-type:none;
+padding-top:20px;
+font-size:20px;
+
+}
+
+button{padding:1%;
+margin-left:5%;
+float:right;}

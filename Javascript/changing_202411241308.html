@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function changeName(){
+            document.getElementById("myName").innerHTML="Emmanuel Okello";
+            document.getElementById("body").style.background="rgba(0,0,0,0.1)";
+            document.getElementById("myImage").src="/html_group_tesla_cw/ProfessionalPicture.jpg";
+        }
+
+        function showMeFlavia(){
+            document.getElementById("myName").innerHTML="Flavia Tracy";
+            document.getElementById("body").style.background="aliceblue";
+            document.getElementById("myImage").src="/html_group_tesla_cw/My professional picture.jpg";
+        }
+
+        function showMeAmon(){
+            document.getElementById("myName").innerHTML="Amon Amutuhaire";
+            document.getElementById("body").style.background="aliceblue";
+            document.getElementById("myImage").src="/html_group_tesla_cw/professionalpicture_amon.jpg";
+            //I stopped coding yesterday.
+        }
+
+        function changeCountry(){
+            document.getElementById("country").style.fontSize="30px";}                  
+            
+        function hideCountry(){
+            document.getElementById("country").style.display="none";}
+        function showCountry(){
+            document.getElementById("country").style.display="block";
+        }
+
+        function showCalculation(){
+        document.getElementById("text-for-math").innerHTML=2024-1997;}
+
+
+
+    </script>
+
+    <style>
+        img{
+            width:50%;
+            height:50%;
+            display:block;
+            padding-top:20px;
+            border-radius:500px;}     
+        
+    </style>
+
+
+</head>
+
+<body id="body">
+
+    <p id="myName">Flavia Tracy</p>
+    <button onClick=changeName()>Emmanuel Okello👆🏼</button>
+    <button onClick=showMeFlavia()>Flavia Tracy👆🏼</button>
+    <button onClick=showMeAmon()>Amon Amutuhaire👆🏼</button>
+    <img id="myImage" src="/html_group_tesla_cw/My professional picture.jpg"/>
+    
+    <p id="country" onclick=changeCountry()>Uganda</p>
+    <br>
+    <button onClick=hideCountry()>Hide Country</button>
+    <button onClick=showCountry()>Show Country</button>
+    
+<br>
+<br>
+<!--Using javascript to write content to html elements-->
+    <p id="text-for-math">Testing</p>
+    <br>
+    <br>
+    <button onClick=showCalculation()>Calculate</button>
+
+
+    <script>
+document.write(2024-1997)
+
+    </script>
+
+    <button onClick=document.write(2030-2024)>Click to Calculate</button>
+    <!--document.write() should only be used for testing as it clears page.-->
+
+    <!--Using windows.alert() to display data-->
+    <script>
+        alert(2024);
+
+    </script>
+
+    <!--Testing print() function that helps print the contents of current
+    page-1k-->
+
+    <button onClick=window.print()>Print screen</button>
+
+
+</body>
+</html>
